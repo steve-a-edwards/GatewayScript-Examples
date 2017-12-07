@@ -12,6 +12,8 @@ https://www.ibm.com/developerworks/community/blogs/HermannSW/entry/gatewayscript
 
 timeOut / delay
 
+```
+
 /*global session, clearTimeout, setTimeout*/  //JSLinted, http://jslint.com
 session.input.readAsJSON(function (error, jsonObj) {
     'use strict';
@@ -34,8 +36,11 @@ session.input.readAsJSON(function (error, jsonObj) {
 
     session.output.write(i);
 });
+```
 
 Following used in In SOAP-Mock-MPGW:
+
+```
 
 // This demonstrates GatewayScript (ECMA) to make delay.
 // Author: Steve Edwards, Escala Ltd.
@@ -54,4 +59,5 @@ setTimeout(function () {
 }, parseInt(delayMs));
 
 session.output.write("End");
--
+
+```
