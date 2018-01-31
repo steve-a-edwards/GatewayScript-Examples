@@ -21,8 +21,10 @@ console.options({'category':'wsrr'}).critical("Domain: " + domain + ", service: 
 
 session.output.write("Output may be seen in System Log and any log target that is looking for event/category 'wsrr'");
 
-// For outputting to other logs see:
+// For outputting to a log create:
 //     logtarget 'gatewayscript-log'
+// which subscribes to:
+//     logging category 'wsrr' 
 // which outputs to:
 //     log file: logtemp://gatewayscript-log
 // where the log output to this is of form:
